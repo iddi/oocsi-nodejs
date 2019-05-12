@@ -1,0 +1,18 @@
+{
+  "name": "oocsi",
+  "version": "0.0.2",
+  "description": "OOCSI client for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/iddi/oocsi-nodejs.git"
+  },
+  "keywords": [
+    "OOCSI"
+  ],
+  "author": "Mathias Funk",
+  "license": "ISC"
+}
