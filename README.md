@@ -1,4 +1,4 @@
-# OOCSI nodejs client
+# OOCSI client for Node.js
 
 This OOCSI client allows access to OOCSI from Node.js via the websocket protocol. 
 
