@@ -2,13 +2,20 @@
 
 This OOCSI client allows access to OOCSI from Node.js via the websocket protocol. 
 
-# How to use
+# How to install
 
-First, include the JavaScript source (either as the [source library](https://github.com/iddi/oocsi-nodejs/blob/master/dist/oocsi-nodejs.js) or as the [minified library](https://github.com/iddi/oocsi-nodejs/blob/master/dist/oocsi-nodejs.min.js)) into your node application.
+With NPM installed, type in your console:
+```bash
+npm install oocsi
+```
+
+# How to use
 
 Then connect to an OOCSI server (which needs to be running a websocket adapter):
 
 ```javascript
+var OOCSI = require('oocsi');
+
 OOCSI.connect("ws://_SERVER_ADDRESS_/ws");
 
 // or with specified client handle
