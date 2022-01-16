@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project default="minify-js" name="Create Node.js distribution bundle">
-	<target name="minify-js">
-		<java jar="lib/yuicompressor-2.4.2.jar" output="../src/oocsi-nodejs.min.js" fork="true">
+
+	<target name="copySources">
+    	<copy file="../src/oocsi-nodejs.min.js" tofile="../module/index.js" />
+    </target>
+
+	<target name="minify-js" depends="copySources">
+		<java jar="lib/closure-compiler.jar" output="../src/oocsi-nodejs.min.js" fork="true">
 			<arg value="../src/oocsi-nodejs.js" />
 		</java>
 	</target>
+
 </project>

@@ -20,6 +20,9 @@ OOCSI.connect("ws://_SERVER_ADDRESS_/ws");
 
 // or with specified client handle
 OOCSI.connect("ws://_SERVER_ADDRESS_/ws", "client_handle");
+
+// use wss:// for a secure connection if that's supported by your OOCSI server
+OOCSI.connect("wss://_SERVER_ADDRESS_/ws", "client_handle");
 ```
  
 
